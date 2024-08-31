@@ -1,0 +1,18 @@
+script(src="/javascripts/profile.js") 
+div(class="profile-container")
+  form(class="container-profile-img" id="form-container" action="/users/update/image" method="post" enctype="multipart/form-data")
+    input(type="file" name="avatar" id="input-avatar")
+    img(src=currentUser.avatar alt="profile-img" id="image-profile")
+  div(class="container-profile-user")
+    p= `${currentUser.username} (${currentUser.local.email})`
+  div(class="container-profile-infos")
+    div(class="container-profile-info") 
+      p 
+        strong Tweet
+        br
+        span(class="text-primary")= tweets && tweets.length ? tweets.length : "-"
+    div(class="container-profile-info")
+      p 
+        strong Following
+        br
+        span(class="text-primary") -

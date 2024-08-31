@@ -1,0 +1,18 @@
+extends ../layout
+
+block content 
+  main(class="main-form")
+    form(method="post" action="/auth/signin")
+      div(class="form-header") Connexion
+      div(class="form-body")
+        div(class="form-group")
+          label(for="email") Email
+          input(type="email" name="email" id="email")
+        div(class="form-group")
+          label(for="password") Mot de passe
+          input(type="password" name="password" id="password")
+        if errors 
+         ul(class="list-errors")
+          each error in errors
+           li(class="text-danger")= error
+        input(type="submit" value="Se connecter" class="btn btn-primary")

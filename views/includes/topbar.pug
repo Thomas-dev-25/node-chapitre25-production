@@ -1,0 +1,21 @@
+header
+  a(class="header-brand" href="/tweets")
+    img(src="/images/twitter.png")
+  nav 
+    ul(class="header-menu")
+      if isAuthenticated
+        li 
+          a(href="/tweets/new" class="active") Tweet
+        li 
+          a(href="/auth/signout") Déconnexion
+      else 
+        li 
+          a(href="/auth/signin/form") Connexion
+        li 
+          a(href="/users/signup/form") Inscription
+    div(class="icon-menu")
+      i(class="fa-solid fa-bars")
+
+
+  
+   

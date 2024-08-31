@@ -1,0 +1,6 @@
+if tweets 
+   ul(class="tweets-list")
+     each tweet in tweets 
+      li(class="tweet-elem")
+        a(class="tweet-content" href="/tweets/edit/" + tweet._id)= tweet.content
+        button(class="btn-small btn-danger" tweetid=tweet._id) Supprimer

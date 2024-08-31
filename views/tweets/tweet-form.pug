@@ -1,0 +1,25 @@
+extends ../layout
+
+block content
+  main(class="main-form")
+    form(method="post" action= tweet._id ? "/tweets/update/" + tweet._id : "/tweets")
+      div(class="form-header") Ecrire un tweet
+      div(class="form-body")
+        div(class="form-group")
+          textarea(class="form-control" name="content" placeholder="What is happening")= tweet.content
+        if errors
+            ul(class="my-2")
+              each error in errors
+                li(class="text-danger")= error
+        input(type="submit" value="Tweeter" class="btn btn-primary")
+        
+
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,103 @@
+:root {
+  --text-color: rgb(63, 56, 68);
+  --text-color-light: rgb(101, 119, 134);
+  --bg-color: rgb(248, 249, 250);
+  --bg-dark-color: rgb(189, 195, 199);
+  --ft-family: Arial, Helvetica, sans-serif;
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --primary-color: rgb(41, 128, 185);
+  --danger-color: rgb(231, 76, 60);
+  --border-color: rgb(220, 221, 225);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--ft-family);
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* main */
+
+main {
+  flex: 1;
+  align-self: center;
+  width: 80%;
+  margin: 3rem 0;
+}
+
+.main-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* classes */
+
+.btn {
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.btn-small {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 4rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: white;
+  background: var(--primary-color);
+}
+
+.btn-danger {
+  color: white;
+  background: var(--danger-color);
+}
+
+.text-danger {
+  color: var(--danger-color);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}

@@ -1,0 +1,66 @@
+/* profile */
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  max-width: 30rem;
+  margin-right: 3rem;
+  color: var(--text-color-light);
+  background: white;
+}
+
+.container-profile-img,
+.container-profile-user,
+.container-profile-infos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-profile-img {
+  width: 100%;
+  padding: 1rem;
+  border: 0;
+}
+
+.container-profile-img input {
+  display: none;
+}
+
+.container-profile-img img {
+  width: 10rem;
+}
+
+.container-profile-user,
+.container-profile-infos {
+  margin: 2rem 0;
+}
+
+.container-profile-infos {
+  text-align: center;
+}
+
+.container-profile-info {
+  flex: 1;
+}
+
+/* tweet */
+
+.tweets-container {
+  flex: 1;
+}
+
+.tweet-elem {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+}
+
+.tweet-elem .btn-small {
+  align-self: flex-end;
+  margin-top: 2rem;
+}
